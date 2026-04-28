@@ -1,14 +1,14 @@
-import Navbar from "./components/Navbar";
-import './App.css'
+import { Layout } from "./Layout";
+import "./App.css";
 
 function App() {
-  
-
   return (
     <>
-      <Navbar />
+      <Layout>
+        <h1>Crimson Bar 🍸</h1>
+      </Layout>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

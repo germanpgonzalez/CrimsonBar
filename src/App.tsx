@@ -5,7 +5,6 @@ function App() {
   return (
     <>
       <Layout>
-        <h1>Crimson Bar 🍸</h1>
       </Layout>
     </>
   );

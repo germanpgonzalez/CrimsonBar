@@ -19,9 +19,10 @@ const Hero = () => {
             cobran vida
           </h1>
           <p className="text-neutral-300 mb-6 max-w-md">
-  En Crimson Bar combinamos sabores, técnica y pasión para crear cócteles únicos.
-  Cada detalle está pensado para ofrecerte una experiencia nocturna distinta.
-</p>
+            En Crimson Bar combinamos sabores, técnica y pasión para crear
+            cócteles únicos. Cada detalle está pensado para ofrecerte una
+            experiencia nocturna distinta.
+          </p>
           <button className="border border-red-600 text-red-600 px-6 py-3 hover:bg-red-600 hover:text-white transition w-fit cursor-pointer">
             Explorar Cócteles
           </button>

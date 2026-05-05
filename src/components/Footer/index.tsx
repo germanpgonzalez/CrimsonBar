@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FooterLogo from "../../assets/footerlogo.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { ImFacebook2 } from "react-icons/im";
@@ -17,10 +18,18 @@ export const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-3">Navegación</h4>
           <ul className="text-neutral-400 space-y-2 cursor-pointer">
-            <li className=" hover:text-red-600">Home</li>
-            <li className=" hover:text-red-600">Cocktails</li>
-            <li className=" hover:text-red-600">Categorías</li>
-            <li className=" hover:text-red-600">Favoritos</li>
+            <li className=" hover:text-red-600">
+              <Link to="/">Home</Link>
+            </li>
+            <li className=" hover:text-red-600">
+             <Link to="/cocktails">Cocktails</Link> 
+            </li>
+            <li className=" hover:text-red-600">
+              <Link to="/categorias">Categorías</Link>
+            </li>
+            <li className=" hover:text-red-600">
+              <Link to="/favoritos">Favoritos</Link>
+            </li>
           </ul>
         </div>
 

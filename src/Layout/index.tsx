@@ -1,17 +1,16 @@
-import type { ReactNode } from "react"
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
-type Props = {
-    children: ReactNode;
-}
-export const Layout = ( {children} : Props) => {
+const Layout = () => {
   return (
     <div className="bg-black text-white min-h-screen">
         <Navbar/>
-        <main className="max-w-6xl mx-auto w-full px-4 py-6">
-            {children}
-        </main>
+        <Outlet/>
+        <Footer/>
     </div>
   )
 }
+
+export default Layout;

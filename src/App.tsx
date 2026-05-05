@@ -1,18 +1,24 @@
-import { Layout } from "./Layout";
-import Hero from './components/Hero';
-import { Footer } from "./components/Footer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout  from "./Layout";
+import Home from "./pages/Home";
+import Categorias from './pages/Categorias';
+import Cocktails from './pages/Cocktails';
+import Favoritos from './pages/Favoritos';
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Layout>
-        <Hero />
-        <div className="max-w-6xl mx-auto w-full px-4 py-6">
-        {/* contenido después del hero */}
-        </div>
-        <Footer/>
-      </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout/>}>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/categorias" element={<Categorias/>}/>
+          <Route path="/cocktails" element={<Cocktails/>}/>
+          <Route path="/favoritos" element={<Favoritos/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }

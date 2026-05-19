@@ -31,11 +31,11 @@ const CocktailList = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
         <div className="mb-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-14">
             Cócteles <span className="text-red-600">Clásicos</span>
           </h2>
 
-          <p className="text-neutral-400 max-w-2xl">
+          <p className="text-neutral-400 max-w-3xl mx-auto text-lg">
             Descubre una selección de los tragos más icónicos y sofisticados de
             la coctelería mundial.
           </p>
